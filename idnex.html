@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form" id="form" novalidate>
+        <h2 class="message"></h2>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="your name" required minlength="3" maxlength="100"/>
+      </div>
+      <div class="form-group">
+        <label for="emial">Email Address</label>
+        <input type="email" id="emial " name="emial" placeholder="exapmle@gmail.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="0911-111-1111" maxlength="11" required pattern="^09\d{9}$"/>
+      </div>
+      <div class="form-group">
+        <label for="website">Website url</label>
+        <input type="url" id="website" name="website" placeholder="https://www.exapmle.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="password1">Passwrd</label>
+        <input type="password" id="password1" name="password" placeholder="Create password (min 8 Characters)" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Please include atleast 1 uppercase character, 1 lowecase character, 1 digit and 1special character"/>
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input type="password" id="password2" name="confirmPassword" placeholder="confirm password" required/>
+      </div>
+      <button>submit</button>
+    </form>
+    <script src="./js.js"></script>
+  </body>
+</html>
